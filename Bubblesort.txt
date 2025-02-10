@@ -1,0 +1,13 @@
+print("*****BUBBLE SORT*****")
+print('='*25)
+n = int(input("enter number of elements to be sorted:/t"))
+lst =[]
+for i in range(n):
+        lst.append(int(input("enter elements to list:  ")))
+#arr = [int(input("enter elements to sort") for i in range(n)]
+print("original list is : ",lst)
+for i in range(n):
+        for j in range(0, n-1-i):
+                if lst[j]>lst[j+1]:
+                        lst[j],lst[j+1]=lst[j+1],lst[j]
+print("sorted list is",lst)
