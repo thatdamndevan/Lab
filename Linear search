@@ -1,0 +1,14 @@
+print("*****linear search*****")
+t=()
+n= int(input("enter no of elements in a tuple:  "))
+print("read tuple elements: ")
+for i in range(n):
+        t=t+(int(input()),)
+print("tuple is: ", t)
+ele = int( input("enter element to search :  "))
+for i in range(len(t)):
+        if t[i]== ele:
+                print(ele, " found at index:  ", i)
+                break
+        else:
+                print("element not found at index ",i," :/")
