@@ -1,0 +1,13 @@
+lst=[]
+num = int(input("how many numbers? "))
+for i in range(num):
+        numbers= int(input("enter number: "))
+        lst.append(numbers)
+print("the list is : ")
+print(lst)
+s= len(lst)
+if s%2!=0:
+        s-=1
+for i in range(0,s,2):
+        lst[i],lst[i+1]=lst[i+1],lst[i]
+print("list after swapping is : ", lst)
